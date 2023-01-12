@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_GWf-MJIuEe288djcj30HaA" name="Assignment1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_GXpNsJIuEe288djcj30HaA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_KTpJMJIuEe288djcj30HaA" name="com.bikeshop.user">
+    <packagedElement xmi:type="uml:Class" xmi:id="_NkRMcJIuEe288djcj30HaA" name="Customer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PGcw4JIuEe288djcj30HaA" name="customerId" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PpkFAJIuEe288djcj30HaA" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dResMJIuEe288djcj30HaA" name="getCustomerId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lf_lwJIuEe288djcj30HaA" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l0SawJIuEe288djcj30HaA" name="setCustomerId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mFhUsJIuEe288djcj30HaA" name="setName"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
