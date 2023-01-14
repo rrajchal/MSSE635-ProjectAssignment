@@ -117,4 +117,5 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_8YYIo5QkEe2SfqzU_Ot8vw" name="customer" type="_ONVNcJQkEe2SfqzU_Ot8vw" association="_8YYIoJQkEe2SfqzU_Ot8vw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_8YYIpJQkEe2SfqzU_Ot8vw" name="edit reservation" type="_VyzxEJQkEe2SfqzU_Ot8vw" association="_8YYIoJQkEe2SfqzU_Ot8vw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VTPxIJQtEe2SfqzU_Ot8vw" name="Manager"/>
 </uml:Model>
