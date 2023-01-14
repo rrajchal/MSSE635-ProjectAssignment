@@ -11,10 +11,67 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_PpkFAJIuEe288djcj30HaA" name="name" visibility="private">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zdrLAJPCEe2De5w0BriQUg" name="userName" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_28rogJPCEe2De5w0BriQUg" name="password" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_dResMJIuEe288djcj30HaA" name="getCustomerId"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_lf_lwJIuEe288djcj30HaA" name="getName"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_l0SawJIuEe288djcj30HaA" name="setCustomerId"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_mFhUsJIuEe288djcj30HaA" name="setName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__R61IJPCEe2De5w0BriQUg" name="setUserName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__nUdYJPCEe2De5w0BriQUg" name="setPassword"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qrHQkJO_Ee2De5w0BriQUg" name="com.bikeshop.bike">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ueHoIJO_Ee2De5w0BriQUg" name="Bike">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_w3CAQJO_Ee2De5w0BriQUg" name="bikeId" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xPu0IJO_Ee2De5w0BriQUg" name="dateFrom" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yUomsJO_Ee2De5w0BriQUg" name="dateTo" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Dyrx8JPAEe2De5w0BriQUg" name="isVisible" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Eb9YcJPAEe2De5w0BriQUg" name="type" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FDQpAJPAEe2De5w0BriQUg" name="cost" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FTYIoJPAEe2De5w0BriQUg" name="comment" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OjkaQJPDEe2De5w0BriQUg" name="hasPaid" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_a-884JPDEe2De5w0BriQUg" name="hasReserved" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pWdDYJPCEe2De5w0BriQUg" name="reserveBike"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_uRSlsJPCEe2De5w0BriQUg" name="setIsVisible"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_uk1z0JPCEe2De5w0BriQUg" name="Operation10"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Le8LoJPDEe2De5w0BriQUg" name="addBike"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_HInhEJPCEe2De5w0BriQUg" name="com.bikeshop.view">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Jq1mMJPCEe2De5w0BriQUg" name="View">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ql0bUJPCEe2De5w0BriQUg" name="bike" visibility="private" type="_ueHoIJO_Ee2De5w0BriQUg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RCE5gJPCEe2De5w0BriQUg" name="customer" visibility="private" type="_NkRMcJIuEe288djcj30HaA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_t3H8wJPDEe2De5w0BriQUg" name="com.bikeshop.database">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ycC5cJPDEe2De5w0BriQUg" name="BikeDb">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5uJ1IJPDEe2De5w0BriQUg" name="bike" visibility="private" type="_ueHoIJO_Ee2De5w0BriQUg" isUnique="false"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zWsj0JPDEe2De5w0BriQUg" name="CustomerDb">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rXYR8JPFEe2De5w0BriQUg" name="customer" type="_NkRMcJIuEe288djcj30HaA" isUnique="false"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>
