@@ -204,7 +204,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIp9U5PCEe2De5w0BriQUg"/>
       </children>
       <element xmi:type="uml:Package" href="Assignment1.uml#_HInhEJPCEe2De5w0BriQUg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIpWQZPCEe2De5w0BriQUg" x="620" y="60" width="232" height="229"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIpWQZPCEe2De5w0BriQUg" x="620" y="60" width="232" height="181"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_t3JK4JPDEe2De5w0BriQUg" type="Package_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_t3Jx8JPDEe2De5w0BriQUg" type="Package_NameLabel"/>
