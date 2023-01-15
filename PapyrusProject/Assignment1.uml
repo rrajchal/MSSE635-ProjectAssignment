@@ -120,20 +120,21 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_8YYIpJQkEe2SfqzU_Ot8vw" name="edit reservation" type="_VyzxEJQkEe2SfqzU_Ot8vw" association="_8YYIoJQkEe2SfqzU_Ot8vw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_VTPxIJQtEe2SfqzU_Ot8vw" name="Manager"/>
-  <packagedElement xmi:type="uml:Component" xmi:id="_S8dPMJRJEe2VhNTG0FQfOg" name="Employee">
-    <realization xmi:type="uml:ComponentRealization" xmi:id="_amJiMJT-Ee2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_S8dPMJRJEe2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
-  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_S8dPMJRJEe2VhNTG0FQfOg" name="Employee"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_4i4BcJRKEe2VhNTG0FQfOg" name="View">
     <packagedElement xmi:type="uml:Component" xmi:id="_UvBZAJRJEe2VhNTG0FQfOg" name="Login">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_6oMV4JRPEe2VhNTG0FQfOg" client="_LFc2sJRJEe2VhNTG0FQfOg" supplier="_UvBZAJRJEe2VhNTG0FQfOg" realizingClassifier="_LFc2sJRJEe2VhNTG0FQfOg"/>
+      <realization xmi:type="uml:ComponentRealization" xmi:id="_ZVKUEJUBEe2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_UvBZAJRJEe2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_PLdX4JRLEe2VhNTG0FQfOg" name="Reservation">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_odKTYJRQEe2VhNTG0FQfOg" client="_LFc2sJRJEe2VhNTG0FQfOg" supplier="_PLdX4JRLEe2VhNTG0FQfOg" realizingClassifier="_LFc2sJRJEe2VhNTG0FQfOg"/>
       <realization xmi:type="uml:ComponentRealization" xmi:id="_pThxUJRpEe2VhNTG0FQfOg" client="_S8dPMJRJEe2VhNTG0FQfOg" supplier="_PLdX4JRLEe2VhNTG0FQfOg" realizingClassifier="_S8dPMJRJEe2VhNTG0FQfOg"/>
+      <realization xmi:type="uml:ComponentRealization" xmi:id="_Y2ZUcJUBEe2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_PLdX4JRLEe2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_U_RJkJRLEe2VhNTG0FQfOg" name="Search">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_pTPm0JRQEe2VhNTG0FQfOg" client="_LFc2sJRJEe2VhNTG0FQfOg" supplier="_U_RJkJRLEe2VhNTG0FQfOg" realizingClassifier="_LFc2sJRJEe2VhNTG0FQfOg"/>
       <realization xmi:type="uml:ComponentRealization" xmi:id="_r2onQJRpEe2VhNTG0FQfOg" client="_S8dPMJRJEe2VhNTG0FQfOg" supplier="_U_RJkJRLEe2VhNTG0FQfOg" realizingClassifier="_S8dPMJRJEe2VhNTG0FQfOg"/>
+      <realization xmi:type="uml:ComponentRealization" xmi:id="_YW7xQJUBEe2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_U_RJkJRLEe2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_onYGsJRNEe2VhNTG0FQfOg" name="Inventory">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_rhkfkJRQEe2VhNTG0FQfOg" client="_S8dPMJRJEe2VhNTG0FQfOg" supplier="_onYGsJRNEe2VhNTG0FQfOg" realizingClassifier="_S8dPMJRJEe2VhNTG0FQfOg"/>
