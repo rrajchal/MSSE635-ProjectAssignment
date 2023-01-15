@@ -120,7 +120,9 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_8YYIpJQkEe2SfqzU_Ot8vw" name="edit reservation" type="_VyzxEJQkEe2SfqzU_Ot8vw" association="_8YYIoJQkEe2SfqzU_Ot8vw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_VTPxIJQtEe2SfqzU_Ot8vw" name="Manager"/>
-  <packagedElement xmi:type="uml:Component" xmi:id="_S8dPMJRJEe2VhNTG0FQfOg" name="Employee"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_S8dPMJRJEe2VhNTG0FQfOg" name="Employee">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_amJiMJT-Ee2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_S8dPMJRJEe2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_4i4BcJRKEe2VhNTG0FQfOg" name="View">
     <packagedElement xmi:type="uml:Component" xmi:id="_UvBZAJRJEe2VhNTG0FQfOg" name="Login">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_6oMV4JRPEe2VhNTG0FQfOg" client="_LFc2sJRJEe2VhNTG0FQfOg" supplier="_UvBZAJRJEe2VhNTG0FQfOg" realizingClassifier="_LFc2sJRJEe2VhNTG0FQfOg"/>
@@ -136,6 +138,9 @@
     <packagedElement xmi:type="uml:Component" xmi:id="_onYGsJRNEe2VhNTG0FQfOg" name="Inventory">
       <realization xmi:type="uml:ComponentRealization" xmi:id="_rhkfkJRQEe2VhNTG0FQfOg" client="_S8dPMJRJEe2VhNTG0FQfOg" supplier="_onYGsJRNEe2VhNTG0FQfOg" realizingClassifier="_S8dPMJRJEe2VhNTG0FQfOg"/>
       <realization xmi:type="uml:ComponentRealization" xmi:id="_YRQ3EJRREe2VhNTG0FQfOg" client="_U_RJkJRLEe2VhNTG0FQfOg" supplier="_onYGsJRNEe2VhNTG0FQfOg" realizingClassifier="_U_RJkJRLEe2VhNTG0FQfOg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_UZFjAJT-Ee2VhNTG0FQfOg" name="Overwrite">
+      <realization xmi:type="uml:ComponentRealization" xmi:id="_ZHPUMJT-Ee2VhNTG0FQfOg" client="_RCUbgJT-Ee2VhNTG0FQfOg" supplier="_UZFjAJT-Ee2VhNTG0FQfOg" realizingClassifier="_RCUbgJT-Ee2VhNTG0FQfOg"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_ew40oJRLEe2VhNTG0FQfOg" name="Database">
@@ -200,7 +205,14 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_1GSh0JR2Ee2gPYM6WEBo4Q" name="Login"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_2OQPcJR2Ee2gPYM6WEBo4Q" name="Authenticator"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_4KOz8JR2Ee2gPYM6WEBo4Q" name="&lt;&lt;extends>>" client="_1GSh0JR2Ee2gPYM6WEBo4Q" supplier="_2OQPcJR2Ee2gPYM6WEBo4Q"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_-i0tsJR2Ee2gPYM6WEBo4Q" name="Update Bike Info"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-i0tsJR2Ee2gPYM6WEBo4Q" name="Browse Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lucP0JT_Ee2VhNTG0FQfOg" name="Make Reservation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_r9qLIJT_Ee2VhNTG0FQfOg" name="Cancel Reservation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sRwL0JT_Ee2VhNTG0FQfOg" name="UseCase7"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sh1PMJT_Ee2VhNTG0FQfOg" name="Edit Reservation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_52Y1gJT_Ee2VhNTG0FQfOg" name="Add Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6VX3kJT_Ee2VhNTG0FQfOg" name="Remove Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7Xpz8JT_Ee2VhNTG0FQfOg" name="Edit Inventory"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_9SNaYJR2Ee2gPYM6WEBo4Q" memberEnd="_9SNaY5R2Ee2gPYM6WEBo4Q _9SNaZJR2Ee2gPYM6WEBo4Q">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9SNaYZR2Ee2gPYM6WEBo4Q" source="org.eclipse.papyrus">
@@ -215,5 +227,55 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_DAxfs5R3Ee2gPYM6WEBo4Q" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_DAxfsJR3Ee2gPYM6WEBo4Q"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_DAxftJR3Ee2gPYM6WEBo4Q" name="update bike info" type="_-i0tsJR2Ee2gPYM6WEBo4Q" association="_DAxfsJR3Ee2gPYM6WEBo4Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_RCUbgJT-Ee2VhNTG0FQfOg" name="Manager"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CcvAQJUAEe2VhNTG0FQfOg" memberEnd="_CdB7MJUAEe2VhNTG0FQfOg _CdB7MZUAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CdAtEJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CdAtEZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CdB7MJUAEe2VhNTG0FQfOg" name="make reservation" type="_lucP0JT_Ee2VhNTG0FQfOg" association="_CcvAQJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CdB7MZUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_CcvAQJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ENBSIJUAEe2VhNTG0FQfOg" memberEnd="_ENB5MpUAEe2VhNTG0FQfOg _ENB5M5UAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ENB5MJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ENB5MZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ENB5MpUAEe2VhNTG0FQfOg" name="cancel reservation" type="_r9qLIJT_Ee2VhNTG0FQfOg" association="_ENBSIJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ENB5M5UAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_ENBSIJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_E0uLUJUAEe2VhNTG0FQfOg" memberEnd="_E0uyYpUAEe2VhNTG0FQfOg _E0vZcJUAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E0uyYJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E0uyYZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E0uyYpUAEe2VhNTG0FQfOg" name="edit reservation" type="_sh1PMJT_Ee2VhNTG0FQfOg" association="_E0uLUJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E0vZcJUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_E0uLUJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FhaSMJUAEe2VhNTG0FQfOg" memberEnd="_Fha5QpUAEe2VhNTG0FQfOg _FhbgUJUAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Fha5QJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Fha5QZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Fha5QpUAEe2VhNTG0FQfOg" name="usecase7" type="_sRwL0JT_Ee2VhNTG0FQfOg" association="_FhaSMJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FhbgUJUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_FhaSMJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GG2hkJUAEe2VhNTG0FQfOg" memberEnd="_GG3vsZUAEe2VhNTG0FQfOg _GG3vspUAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GG3IoJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GG3vsJUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GG3vsZUAEe2VhNTG0FQfOg" name="add inventory" type="_52Y1gJT_Ee2VhNTG0FQfOg" association="_GG2hkJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GG3vspUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_GG2hkJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GjqZYJUAEe2VhNTG0FQfOg" memberEnd="_GjrAcpUAEe2VhNTG0FQfOg _GjrAc5UAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GjrAcJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GjrAcZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GjrAcpUAEe2VhNTG0FQfOg" name="remove inventory" type="_6VX3kJT_Ee2VhNTG0FQfOg" association="_GjqZYJUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GjrAc5UAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_GjqZYJUAEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HIqj4JUAEe2VhNTG0FQfOg" memberEnd="_HIrK8pUAEe2VhNTG0FQfOg _HIryAJUAEe2VhNTG0FQfOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HIrK8JUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HIrK8ZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HIrK8pUAEe2VhNTG0FQfOg" name="edit inventory" type="_7Xpz8JT_Ee2VhNTG0FQfOg" association="_HIqj4JUAEe2VhNTG0FQfOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HIryAJUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_HIqj4JUAEe2VhNTG0FQfOg"/>
   </packagedElement>
 </uml:Model>
