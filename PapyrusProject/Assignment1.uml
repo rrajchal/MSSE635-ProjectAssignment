@@ -209,7 +209,6 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_-i0tsJR2Ee2gPYM6WEBo4Q" name="Browse Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_lucP0JT_Ee2VhNTG0FQfOg" name="Make Reservation"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_r9qLIJT_Ee2VhNTG0FQfOg" name="Cancel Reservation"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_sRwL0JT_Ee2VhNTG0FQfOg" name="UseCase7"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_sh1PMJT_Ee2VhNTG0FQfOg" name="Edit Reservation"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_52Y1gJT_Ee2VhNTG0FQfOg" name="Add Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6VX3kJT_Ee2VhNTG0FQfOg" name="Remove Inventory"/>
@@ -250,13 +249,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_E0uyYpUAEe2VhNTG0FQfOg" name="edit reservation" type="_sh1PMJT_Ee2VhNTG0FQfOg" association="_E0uLUJUAEe2VhNTG0FQfOg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_E0vZcJUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_E0uLUJUAEe2VhNTG0FQfOg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_FhaSMJUAEe2VhNTG0FQfOg" memberEnd="_Fha5QpUAEe2VhNTG0FQfOg _FhbgUJUAEe2VhNTG0FQfOg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Fha5QJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Fha5QZUAEe2VhNTG0FQfOg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Fha5QpUAEe2VhNTG0FQfOg" name="usecase7" type="_sRwL0JT_Ee2VhNTG0FQfOg" association="_FhaSMJUAEe2VhNTG0FQfOg"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_FhbgUJUAEe2VhNTG0FQfOg" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_FhaSMJUAEe2VhNTG0FQfOg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_GG2hkJUAEe2VhNTG0FQfOg" memberEnd="_GG3vsZUAEe2VhNTG0FQfOg _GG3vspUAEe2VhNTG0FQfOg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GG3IoJUAEe2VhNTG0FQfOg" source="org.eclipse.papyrus">
