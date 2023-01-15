@@ -75,12 +75,14 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Actor" xmi:id="_ONVNcJQkEe2SfqzU_Ot8vw" name="Customer"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_PXYlwJQkEe2SfqzU_Ot8vw" name="System">
+  <packagedElement xmi:type="uml:Package" xmi:id="_PXYlwJQkEe2SfqzU_Ot8vw" name="Customer Interface - GBS">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Q__iUJQkEe2SfqzU_Ot8vw" name="Log In"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_SBZ8AJQkEe2SfqzU_Ot8vw" name="Browse Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_T0JE8JQkEe2SfqzU_Ot8vw" name="Make Reservation"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Uyb5MJQkEe2SfqzU_Ot8vw" name="Cancel Reservation"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_VyzxEJQkEe2SfqzU_Ot8vw" name="Edit Reservation"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TrmwMJR1Ee2gPYM6WEBo4Q" name="Authenticator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_WuzbcJR1Ee2gPYM6WEBo4Q" name="&lt;&lt;extends>>" client="_Q__iUJQkEe2SfqzU_Ot8vw" supplier="_TrmwMJR1Ee2gPYM6WEBo4Q"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_3x7h8JQkEe2SfqzU_Ot8vw" memberEnd="_3x7h85QkEe2SfqzU_Ot8vw _3x7h9JQkEe2SfqzU_Ot8vw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3x7h8ZQkEe2SfqzU_Ot8vw" source="org.eclipse.papyrus">
@@ -149,11 +151,14 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_LFc2sJRJEe2VhNTG0FQfOg" name="Customer"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_mcl04JRzEe2StY1S53783w" name="Package18">
+  <packagedElement xmi:type="uml:Package" xmi:id="_mcl04JRzEe2StY1S53783w" name="Manager Interface - GBS">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_qX-FUJRzEe2StY1S53783w" name="Add Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_qmuTAJRzEe2StY1S53783w" name="Remove Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_q1nqoJRzEe2StY1S53783w" name="Edit Inventory"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_wrRPYJRzEe2StY1S53783w" name="Adjust Prices"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5u3hYJR0Ee2gPYM6WEBo4Q" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_AgyhIJR1Ee2gPYM6WEBo4Q" name="Authenticator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Yb4oUJR1Ee2gPYM6WEBo4Q" name="&lt;&lt;extends>>" client="_5u3hYJR0Ee2gPYM6WEBo4Q" supplier="_AgyhIJR1Ee2gPYM6WEBo4Q"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_4z6xgJRzEe2StY1S53783w" memberEnd="_4z6xg5RzEe2StY1S53783w _4z6xhJRzEe2StY1S53783w">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4z6xgZRzEe2StY1S53783w" source="org.eclipse.papyrus">
@@ -182,5 +187,33 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_8HFyc5RzEe2StY1S53783w" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_8HFycJRzEe2StY1S53783w"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_8HFydJRzEe2StY1S53783w" name="adjust prices" type="_wrRPYJRzEe2StY1S53783w" association="_8HFycJRzEe2StY1S53783w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8PNXMJR0Ee2gPYM6WEBo4Q" memberEnd="_8PWhIpR0Ee2gPYM6WEBo4Q _8PWhI5R0Ee2gPYM6WEBo4Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8PWhIJR0Ee2gPYM6WEBo4Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8PWhIZR0Ee2gPYM6WEBo4Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8PWhIpR0Ee2gPYM6WEBo4Q" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_8PNXMJR0Ee2gPYM6WEBo4Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8PWhI5R0Ee2gPYM6WEBo4Q" name="login" type="_5u3hYJR0Ee2gPYM6WEBo4Q" association="_8PNXMJR0Ee2gPYM6WEBo4Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_tbTMEJR2Ee2gPYM6WEBo4Q" name="Employee"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_uMnUQJR2Ee2gPYM6WEBo4Q" name="Employee Interface - GBS">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1GSh0JR2Ee2gPYM6WEBo4Q" name="Login"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2OQPcJR2Ee2gPYM6WEBo4Q" name="Authenticator"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_4KOz8JR2Ee2gPYM6WEBo4Q" name="&lt;&lt;extends>>" client="_1GSh0JR2Ee2gPYM6WEBo4Q" supplier="_2OQPcJR2Ee2gPYM6WEBo4Q"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-i0tsJR2Ee2gPYM6WEBo4Q" name="Update Bike Info"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9SNaYJR2Ee2gPYM6WEBo4Q" memberEnd="_9SNaY5R2Ee2gPYM6WEBo4Q _9SNaZJR2Ee2gPYM6WEBo4Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9SNaYZR2Ee2gPYM6WEBo4Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9SNaYpR2Ee2gPYM6WEBo4Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9SNaY5R2Ee2gPYM6WEBo4Q" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_9SNaYJR2Ee2gPYM6WEBo4Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9SNaZJR2Ee2gPYM6WEBo4Q" name="login" type="_1GSh0JR2Ee2gPYM6WEBo4Q" association="_9SNaYJR2Ee2gPYM6WEBo4Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DAxfsJR3Ee2gPYM6WEBo4Q" memberEnd="_DAxfs5R3Ee2gPYM6WEBo4Q _DAxftJR3Ee2gPYM6WEBo4Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DAxfsZR3Ee2gPYM6WEBo4Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DAxfspR3Ee2gPYM6WEBo4Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DAxfs5R3Ee2gPYM6WEBo4Q" name="employee" type="_tbTMEJR2Ee2gPYM6WEBo4Q" association="_DAxfsJR3Ee2gPYM6WEBo4Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DAxftJR3Ee2gPYM6WEBo4Q" name="update bike info" type="_-i0tsJR2Ee2gPYM6WEBo4Q" association="_DAxfsJR3Ee2gPYM6WEBo4Q"/>
   </packagedElement>
 </uml:Model>
