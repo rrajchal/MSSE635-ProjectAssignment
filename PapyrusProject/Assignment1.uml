@@ -149,4 +149,38 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Component" xmi:id="_LFc2sJRJEe2VhNTG0FQfOg" name="Customer"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mcl04JRzEe2StY1S53783w" name="Package18">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qX-FUJRzEe2StY1S53783w" name="Add Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qmuTAJRzEe2StY1S53783w" name="Remove Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_q1nqoJRzEe2StY1S53783w" name="Edit Inventory"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wrRPYJRzEe2StY1S53783w" name="Adjust Prices"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4z6xgJRzEe2StY1S53783w" memberEnd="_4z6xg5RzEe2StY1S53783w _4z6xhJRzEe2StY1S53783w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4z6xgZRzEe2StY1S53783w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4z6xgpRzEe2StY1S53783w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4z6xg5RzEe2StY1S53783w" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_4z6xgJRzEe2StY1S53783w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4z6xhJRzEe2StY1S53783w" name="add inventory" type="_qX-FUJRzEe2StY1S53783w" association="_4z6xgJRzEe2StY1S53783w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6Y8OkJRzEe2StY1S53783w" memberEnd="_6ZF_kpRzEe2StY1S53783w _6ZF_k5RzEe2StY1S53783w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6ZF_kJRzEe2StY1S53783w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6ZF_kZRzEe2StY1S53783w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6ZF_kpRzEe2StY1S53783w" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_6Y8OkJRzEe2StY1S53783w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6ZF_k5RzEe2StY1S53783w" name="remove inventory" type="_qmuTAJRzEe2StY1S53783w" association="_6Y8OkJRzEe2StY1S53783w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7H6NYJRzEe2StY1S53783w" memberEnd="_7ID-YpRzEe2StY1S53783w _7ID-Y5RzEe2StY1S53783w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7ID-YJRzEe2StY1S53783w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7ID-YZRzEe2StY1S53783w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7ID-YpRzEe2StY1S53783w" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_7H6NYJRzEe2StY1S53783w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7ID-Y5RzEe2StY1S53783w" name="edit inventory" type="_q1nqoJRzEe2StY1S53783w" association="_7H6NYJRzEe2StY1S53783w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8HFycJRzEe2StY1S53783w" memberEnd="_8HFyc5RzEe2StY1S53783w _8HFydJRzEe2StY1S53783w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8HFycZRzEe2StY1S53783w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8HFycpRzEe2StY1S53783w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8HFyc5RzEe2StY1S53783w" name="manager" type="_VTPxIJQtEe2SfqzU_Ot8vw" association="_8HFycJRzEe2StY1S53783w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8HFydJRzEe2StY1S53783w" name="adjust prices" type="_wrRPYJRzEe2StY1S53783w" association="_8HFycJRzEe2StY1S53783w"/>
+  </packagedElement>
 </uml:Model>
