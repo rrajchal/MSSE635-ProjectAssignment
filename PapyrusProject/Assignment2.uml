@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VOw-QJU0Ee2VhNTG0FQfOg" name="Assignment2">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_E2NLIJm4Ee2VhNTG0FQfOg">
+    <body>Client&#xD;
+</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_G2njsJm4Ee2VhNTG0FQfOg">
+    <body>Server&#xD;
+</body>
+  </ownedComment>
   <packageImport xmi:type="uml:PackageImport" xmi:id="_VQRaIJU0Ee2VhNTG0FQfOg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_x8OKMJmzEe2VhNTG0FQfOg" name="Customer"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_1keqUJmzEe2VhNTG0FQfOg" name="Employee"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_26HnkJmzEe2VhNTG0FQfOg" name="Manager"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_8VZkgJmzEe2VhNTG0FQfOg" name="Front-End">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_NEVxkJm1Ee2VhNTG0FQfOg" name="uses" client="_x8OKMJmzEe2VhNTG0FQfOg" supplier="_8VZkgJmzEe2VhNTG0FQfOg" realizingClassifier="_x8OKMJmzEe2VhNTG0FQfOg"/>
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_rhxkYJm1Ee2VhNTG0FQfOg" name="uses" client="_1keqUJmzEe2VhNTG0FQfOg" supplier="_8VZkgJmzEe2VhNTG0FQfOg" realizingClassifier="_1keqUJmzEe2VhNTG0FQfOg"/>
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_t3KucJm1Ee2VhNTG0FQfOg" name="uses" client="_26HnkJmzEe2VhNTG0FQfOg" supplier="_8VZkgJmzEe2VhNTG0FQfOg" realizingClassifier="_26HnkJmzEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_MEGSAJm0Ee2VhNTG0FQfOg" name="BikeDatabase">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_iDnV8Jm3Ee2VhNTG0FQfOg" name="CRUD" client="_f1j4EJm5Ee2VhNTG0FQfOg" supplier="_MEGSAJm0Ee2VhNTG0FQfOg" realizingClassifier="_f1j4EJm5Ee2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_PFniQJm0Ee2VhNTG0FQfOg" name="CustomerDatabase">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_kfN1sJm3Ee2VhNTG0FQfOg" name="CRUD" client="_f1j4EJm5Ee2VhNTG0FQfOg" supplier="_PFniQJm0Ee2VhNTG0FQfOg" realizingClassifier="_f1j4EJm5Ee2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_REd0kJm0Ee2VhNTG0FQfOg" name="EmployeeDatabase">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_mhpAcJm3Ee2VhNTG0FQfOg" name="CRUD" client="_f1j4EJm5Ee2VhNTG0FQfOg" supplier="_REd0kJm0Ee2VhNTG0FQfOg" realizingClassifier="_f1j4EJm5Ee2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_gQcPgJm0Ee2VhNTG0FQfOg" name="WebServer">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_ZdXjwJm1Ee2VhNTG0FQfOg" name="request" client="_8VZkgJmzEe2VhNTG0FQfOg" supplier="_gQcPgJm0Ee2VhNTG0FQfOg" realizingClassifier="_8VZkgJmzEe2VhNTG0FQfOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_f1j4EJm5Ee2VhNTG0FQfOg" name="authenticate">
+    <realization xmi:type="uml:ComponentRealization" xmi:id="_sNrrUJm5Ee2VhNTG0FQfOg" name="authenticate" client="_gQcPgJm0Ee2VhNTG0FQfOg" supplier="_f1j4EJm5Ee2VhNTG0FQfOg" realizingClassifier="_gQcPgJm0Ee2VhNTG0FQfOg"/>
+  </packagedElement>
 </uml:Model>
