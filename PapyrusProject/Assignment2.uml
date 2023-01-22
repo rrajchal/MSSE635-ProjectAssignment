@@ -74,7 +74,7 @@
     <packagedElement xmi:type="uml:Component" xmi:id="_pbXPsJnwEe2PisBru5WeDQ" name="BrowseInventoryUI"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_qkO8QJnwEe2PisBru5WeDQ" name="ReservationUI"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_raBUwJnwEe2PisBru5WeDQ" name="BillingUI"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_SSXeYJnxEe2PisBru5WeDQ" client="_eRv28JnwEe2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_SSXeYJnxEe2PisBru5WeDQ" client="_raBUwJnwEe2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
     <packagedElement xmi:type="uml:Usage" xmi:id="_l0KQwJn2Ee2PisBru5WeDQ" client="_eRv28JnwEe2PisBru5WeDQ" supplier="_491poJnxEe2PisBru5WeDQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_JiiAcJnxEe2PisBru5WeDQ" name="ExternalServicesLayer">
@@ -103,6 +103,7 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_S2aX4Jn3Ee2PisBru5WeDQ" name="ExternalDataStores">
       <packagedElement xmi:type="uml:Component" xmi:id="_rs37IJn3Ee2PisBru5WeDQ" name="BillingData"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_sR1CUJn3Ee2PisBru5WeDQ" name="PartsOrderData"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="__-j5YJn8Ee2PisBru5WeDQ" client="_S2aX4Jn3Ee2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_JkNCIJn2Ee2PisBru5WeDQ" name="ReservationData"/>
   </packagedElement>
