@@ -8,6 +8,24 @@
     <body>Server&#xD;
 </body>
   </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_X_wcUKACEe2ZHu1ISXOCmg" annotatedElement="_3ce4AJ_5Ee2ZHu1ISXOCmg">
+    <body>&lt;&lt;connector>>&#xD;
+Data Access</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lZePcKACEe2ZHu1ISXOCmg" annotatedElement="_Syli8J_5Ee2ZHu1ISXOCmg">
+    <body>&lt;&lt;connector>>&#xD;
+Data Access</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_tNQU0KACEe2ZHu1ISXOCmg" annotatedElement="_Du0MUJ_6Ee2ZHu1ISXOCmg">
+    <body>&lt;&lt;connector>>&#xD;
+Data Access</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_gj-jUKAGEe2ZHu1ISXOCmg" annotatedElement="_NCKgoJ_yEe2ZHu1ISXOCmg">
+    <body>&lt;&lt;API Connector>>&#xD;
+API is responsible for &#xD;
+data conversion and &#xD;
+service abstraction</body>
+  </ownedComment>
   <packageImport xmi:type="uml:PackageImport" xmi:id="_VQRaIJU0Ee2VhNTG0FQfOg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -70,41 +88,51 @@
     <realization xmi:type="uml:ComponentRealization" xmi:id="_JS7AgJnYEe2VhNTG0FQfOg" name="SearchEmployeeEvent" client="_qd0TYJm9Ee2VhNTG0FQfOg" supplier="_jKROcJnXEe2VhNTG0FQfOg" realizingClassifier="_qd0TYJm9Ee2VhNTG0FQfOg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_eRv28JnwEe2PisBru5WeDQ" name="GUILayer">
-    <packagedElement xmi:type="uml:Component" xmi:id="_n0_u0JnwEe2PisBru5WeDQ" name="LogInUI"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_pbXPsJnwEe2PisBru5WeDQ" name="BrowseInventoryUI"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_qkO8QJnwEe2PisBru5WeDQ" name="ReservationUI"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_raBUwJnwEe2PisBru5WeDQ" name="BillingUI"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_SSXeYJnxEe2PisBru5WeDQ" client="_raBUwJnwEe2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_l0KQwJn2Ee2PisBru5WeDQ" client="_eRv28JnwEe2PisBru5WeDQ" supplier="_491poJnxEe2PisBru5WeDQ"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_n0_u0JnwEe2PisBru5WeDQ" name="LogInUI">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_catwQJ_4Ee2ZHu1ISXOCmg" name="&lt;&lt;connector>> Procedure Call" client="_n0_u0JnwEe2PisBru5WeDQ" supplier="_TxtC0Jn0Ee2PisBru5WeDQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_pbXPsJnwEe2PisBru5WeDQ" name="BrowseInventoryUI">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_c6dAQJ_4Ee2ZHu1ISXOCmg" name="&lt;&lt;connector>> Procedure Call" client="_pbXPsJnwEe2PisBru5WeDQ" supplier="_UHY-8Jn0Ee2PisBru5WeDQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_qkO8QJnwEe2PisBru5WeDQ" name="ReservationUI">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ddVD0J_4Ee2ZHu1ISXOCmg" name="&lt;&lt;connector>> Procedure Call" client="_qkO8QJnwEe2PisBru5WeDQ" supplier="_UfsKMJn0Ee2PisBru5WeDQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_raBUwJnwEe2PisBru5WeDQ" name="BillingUI">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wMGFgJ_3Ee2ZHu1ISXOCmg" name="&lt;&lt;connector>> Remote Procedure Call" client="_raBUwJnwEe2PisBru5WeDQ" supplier="_NCKgoJ_yEe2ZHu1ISXOCmg" contract="_NCKgoJ_yEe2ZHu1ISXOCmg"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_JiiAcJnxEe2PisBru5WeDQ" name="ExternalServicesLayer">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_65YmQKAFEe2ZHu1ISXOCmg" annotatedElement="_j0srAJ_3Ee2ZHu1ISXOCmg">
+      <body>&lt;&lt;connector>>&#xD;
+Data Access</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Component" xmi:id="_VuKP0JnxEe2PisBru5WeDQ" name="BillingSystem"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_WBh3wJnxEe2PisBru5WeDQ" name="PartsSupplierOrderingSystem"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_50swwJ_yEe2ZHu1ISXOCmg" name="ExternalDataStores">
+      <packagedElement xmi:type="uml:Component" xmi:id="_rs37IJn3Ee2PisBru5WeDQ" name="BillingData"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_j0srAJ_3Ee2ZHu1ISXOCmg" client="_VuKP0JnxEe2PisBru5WeDQ" supplier="_50swwJ_yEe2ZHu1ISXOCmg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_491poJnxEe2PisBru5WeDQ" name="BusinessLogicLayer">
     <packagedElement xmi:type="uml:Component" xmi:id="_TxtC0Jn0Ee2PisBru5WeDQ" name="AuthenticationService"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_UHY-8Jn0Ee2PisBru5WeDQ" name="InventoryMainpulationService"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_UfsKMJn0Ee2PisBru5WeDQ" name="ReservationProcessingService"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_XbraMJn0Ee2PisBru5WeDQ" name="ExternalServicesAPI">
-      <packagedElement xmi:type="uml:Usage" xmi:id="_zU1SYJn0Ee2PisBru5WeDQ" client="_XbraMJn0Ee2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_UfsKMJn0Ee2PisBru5WeDQ" name="ReservationProcessingService">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Du0MUJ_6Ee2ZHu1ISXOCmg" client="_UfsKMJn0Ee2PisBru5WeDQ" supplier="_JkNCIJn2Ee2PisBru5WeDQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Usage" xmi:id="___kNsJn2Ee2PisBru5WeDQ" client="_491poJnxEe2PisBru5WeDQ" supplier="_aLjEUJn1Ee2PisBru5WeDQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_aLjEUJn1Ee2PisBru5WeDQ" name="DataStore">
     <packagedElement xmi:type="uml:Package" xmi:id="_j9YKwJn1Ee2PisBru5WeDQ" name="InventoryDataStore">
       <packagedElement xmi:type="uml:Component" xmi:id="_nJXloJn1Ee2PisBru5WeDQ" name="ActiveBicycleData"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_nrgCUJn1Ee2PisBru5WeDQ" name="ArchivedBicycleData"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_3ce4AJ_5Ee2ZHu1ISXOCmg" client="_UHY-8Jn0Ee2PisBru5WeDQ" supplier="_nJXloJn1Ee2PisBru5WeDQ _nrgCUJn1Ee2PisBru5WeDQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="__yDyoJn1Ee2PisBru5WeDQ" name="AccountDataStore">
       <packagedElement xmi:type="uml:Component" xmi:id="_dAcN0Jn1Ee2PisBru5WeDQ" name="CustomerAccountData"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_CutJ8Jn2Ee2PisBru5WeDQ" name="EmployeeAccountData"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_DLLDgJn2Ee2PisBru5WeDQ" name="ManagerAccountData"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_S2aX4Jn3Ee2PisBru5WeDQ" name="ExternalDataStores">
-      <packagedElement xmi:type="uml:Component" xmi:id="_rs37IJn3Ee2PisBru5WeDQ" name="BillingData"/>
-      <packagedElement xmi:type="uml:Component" xmi:id="_sR1CUJn3Ee2PisBru5WeDQ" name="PartsOrderData"/>
-      <packagedElement xmi:type="uml:Usage" xmi:id="__-j5YJn8Ee2PisBru5WeDQ" client="_S2aX4Jn3Ee2PisBru5WeDQ" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Syli8J_5Ee2ZHu1ISXOCmg" client="_TxtC0Jn0Ee2PisBru5WeDQ" supplier="_dAcN0Jn1Ee2PisBru5WeDQ _DLLDgJn2Ee2PisBru5WeDQ _CutJ8Jn2Ee2PisBru5WeDQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_JkNCIJn2Ee2PisBru5WeDQ" name="ReservationData"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_NCKgoJ_yEe2ZHu1ISXOCmg" name="BillingAPI"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_5b-VcJ_3Ee2ZHu1ISXOCmg" name="&lt;&lt;connector>> Procedure Call" client="_NCKgoJ_yEe2ZHu1ISXOCmg" supplier="_JiiAcJnxEe2PisBru5WeDQ"/>
 </uml:Model>
