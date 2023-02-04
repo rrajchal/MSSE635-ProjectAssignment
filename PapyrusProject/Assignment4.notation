@@ -879,10 +879,6 @@
       <children xmi:type="notation:BasicCompartment" xmi:id="_Dz6cE6RKEe2i9Ltx4VXLOw" type="Interaction_SubfragmentCompartment">
         <children xmi:type="notation:Shape" xmi:id="_y8xboKRQEe2i9Ltx4VXLOw" type="Lifeline_Shape">
           <children xmi:type="notation:DecorationNode" xmi:id="_y8xboqRQEe2i9Ltx4VXLOw" type="Lifeline_NameLabel"/>
-          <children xmi:type="notation:Shape" xmi:id="_6bpA8KRQEe2i9Ltx4VXLOw" type="ActionExecutionSpecification_Shape">
-            <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_6bkIcKRQEe2i9Ltx4VXLOw"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bpA8aRQEe2i9Ltx4VXLOw" x="40" y="46" width="20" height="540"/>
-          </children>
           <element xmi:type="uml:Lifeline" href="Assignment4.uml#_y8uYUKRQEe2i9Ltx4VXLOw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y8xboaRQEe2i9Ltx4VXLOw" x="119" y="10" height="629"/>
         </children>
@@ -1263,18 +1259,18 @@
         <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_2_8j4KRVEe2i9Ltx4VXLOw"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS_OHqRZEe2i9Ltx4VXLOw" x="40" y="227" width="20" height="100"/>
       </children>
-      <children xmi:type="notation:Shape" xmi:id="_QS_OH6RZEe2i9Ltx4VXLOw" type="ActionExecutionSpecification_Shape">
-        <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_4tqC4KRVEe2i9Ltx4VXLOw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS_OIKRZEe2i9Ltx4VXLOw" x="40" y="363" width="20" height="223"/>
+      <children xmi:type="notation:Shape" xmi:id="_89HJEKRZEe2i9Ltx4VXLOw" type="ActionExecutionSpecification_Shape">
+        <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_881cQKRZEe2i9Ltx4VXLOw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_89HJEaRZEe2i9Ltx4VXLOw" x="40" y="363" width="20" height="100"/>
       </children>
       <element xmi:type="uml:Lifeline" href="Assignment4.uml#_0CTgUKRQEe2i9Ltx4VXLOw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS_OIaRZEe2i9Ltx4VXLOw" x="573" y="20" height="625"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_QS_1IKRZEe2i9Ltx4VXLOw" type="Lifeline_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_QS_1IaRZEe2i9Ltx4VXLOw" type="Lifeline_NameLabel"/>
-      <children xmi:type="notation:Shape" xmi:id="_QS_1IqRZEe2i9Ltx4VXLOw" type="ActionExecutionSpecification_Shape">
-        <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_6bkIcKRQEe2i9Ltx4VXLOw"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS_1I6RZEe2i9Ltx4VXLOw" x="40" y="46" width="20" height="540"/>
+      <children xmi:type="notation:Shape" xmi:id="_B5XnsKRaEe2i9Ltx4VXLOw" type="ActionExecutionSpecification_Shape">
+        <element xmi:type="uml:ActionExecutionSpecification" href="Assignment4.uml#_B4_NMKRaEe2i9Ltx4VXLOw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B5YOwKRaEe2i9Ltx4VXLOw" x="40" y="40" width="20" height="482"/>
       </children>
       <element xmi:type="uml:Lifeline" href="Assignment4.uml#_y8uYUKRQEe2i9Ltx4VXLOw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QS_1JKRZEe2i9Ltx4VXLOw" x="129" y="20" height="629"/>
@@ -1325,7 +1321,7 @@
       <element xmi:type="uml:Message" href="Assignment4.uml#_BBao0KRWEe2i9Ltx4VXLOw"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QS-nBqRZEe2i9Ltx4VXLOw" points="[10, -2, -172, 31]$[192, -33, 10, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS-nB6RZEe2i9Ltx4VXLOw" id="(0.5,0.35930047694753575)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS-nCKRZEe2i9Ltx4VXLOw" id="(0.5,0.3616)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS-nCKRZEe2i9Ltx4VXLOw" id="(0.5,0.36160000000000003)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_QS-nEqRZEe2i9Ltx4VXLOw" type="Message_SynchEdge" source="_QS_OG6RZEe2i9Ltx4VXLOw" target="_QS_OEKRZEe2i9Ltx4VXLOw">
       <children xmi:type="notation:DecorationNode" xmi:id="_QS-nE6RZEe2i9Ltx4VXLOw" type="Message_SynchNameLabel">
@@ -1363,7 +1359,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_QS_OJ6RZEe2i9Ltx4VXLOw"/>
       <element xmi:type="uml:Message" href="Assignment4.uml#_Ne8ycKRUEe2i9Ltx4VXLOw"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QS_OKKRZEe2i9Ltx4VXLOw" points="[-10, 10, -265, 40]$[245, -30, -10, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS_OKaRZEe2i9Ltx4VXLOw" id="(0.5,0.10492845786963434)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS_OKaRZEe2i9Ltx4VXLOw" id="(0.5,0.10492845786963433)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QS_OKqRZEe2i9Ltx4VXLOw" id="(0.5,0.10492845786963434)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_QS_OK6RZEe2i9Ltx4VXLOw" type="Message_AsynchEdge" source="_QS_OEKRZEe2i9Ltx4VXLOw" target="_QS_OG6RZEe2i9Ltx4VXLOw">
