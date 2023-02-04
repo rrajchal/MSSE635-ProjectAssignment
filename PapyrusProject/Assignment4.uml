@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8u6R8KBcEe2VhNTG0FQfOg" name="Assignment4">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_ZCkKwKQAEe2VhNTG0FQfOg">
+    <body>Client</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_ck4a8KQAEe2VhNTG0FQfOg">
+    <body>Server&#xD;
+</body>
+  </ownedComment>
   <packageImport xmi:type="uml:PackageImport" xmi:id="_8ve5sKBcEe2VhNTG0FQfOg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ly-mAKPqEe2VhNTG0FQfOg" name="LoginView"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QlR3YKPqEe2VhNTG0FQfOg" name="Authentication"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qn654KPqEe2VhNTG0FQfOg" name="Client"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tkkRMKPqEe2VhNTG0FQfOg" name="Customer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uZ4voKPqEe2VhNTG0FQfOg" name="Employee"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vQQ-AKPqEe2VhNTG0FQfOg" name="Manager"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_POYgcKPrEe2VhNTG0FQfOg" client="_Ly-mAKPqEe2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rbMUcKPrEe2VhNTG0FQfOg" name="Server"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_zvRqgKPrEe2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_QlR3YKPqEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_URxsYKPsEe2VhNTG0FQfOg" name="Reservation"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U47jQKP9Ee2VhNTG0FQfOg" name="Bike"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VqHvoKP9Ee2VhNTG0FQfOg" name="Customer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bR3bQKP9Ee2VhNTG0FQfOg" name="Employee"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oNbSwKP9Ee2VhNTG0FQfOg" client="_QlR3YKPqEe2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_qHH_UKP9Ee2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_Ly-mAKPqEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_taiQ0KP9Ee2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_URxsYKPsEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_y_-PUKP9Ee2VhNTG0FQfOg" name="adds" client="_uZ4voKPqEe2VhNTG0FQfOg" supplier="_iZZMsKP_Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_zlAPAKP9Ee2VhNTG0FQfOg" name="overwrites" client="_vQQ-AKPqEe2VhNTG0FQfOg" supplier="_nTrVYKP_Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_2GIvAKP9Ee2VhNTG0FQfOg" client="_URxsYKPsEe2VhNTG0FQfOg" supplier="_U47jQKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_4Nxw8KP9Ee2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_RltpkKP-Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_H_NCUKP-Ee2VhNTG0FQfOg" client="_URxsYKPsEe2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RltpkKP-Ee2VhNTG0FQfOg" name="Add"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VfVmgKP-Ee2VhNTG0FQfOg" name="Overwrite"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_rHHnQKP-Ee2VhNTG0FQfOg" client="_RltpkKP-Ee2VhNTG0FQfOg" supplier="_bR3bQKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_5GYXcKP-Ee2VhNTG0FQfOg" client="_VfVmgKP-Ee2VhNTG0FQfOg" supplier="_U47jQKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WNvIIKP_Ee2VhNTG0FQfOg" name="ReserveView"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iZZMsKP_Ee2VhNTG0FQfOg" name="BikeUpdateView"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nTrVYKP_Ee2VhNTG0FQfOg" name="OverwriteView"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ztULkKP_Ee2VhNTG0FQfOg" name="ConfirmationView"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_853asKP_Ee2VhNTG0FQfOg" name="uses" client="_qn654KPqEe2VhNTG0FQfOg" supplier="_Ly-mAKPqEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_AF1ncKQAEe2VhNTG0FQfOg" name="reserves" client="_tkkRMKPqEe2VhNTG0FQfOg" supplier="_WNvIIKP_Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_EPNQkKQAEe2VhNTG0FQfOg" client="_WNvIIKP_Ee2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_FV-rYKQAEe2VhNTG0FQfOg" client="_iZZMsKP_Ee2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_G1O3oKQAEe2VhNTG0FQfOg" client="_nTrVYKP_Ee2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_Hmac8KQAEe2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_ztULkKP_Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_JVhDEKQAEe2VhNTG0FQfOg" client="_rbMUcKPrEe2VhNTG0FQfOg" supplier="_VfVmgKP-Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_LJbQsKQAEe2VhNTG0FQfOg" client="_RltpkKP-Ee2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_L5QyMKQAEe2VhNTG0FQfOg" client="_VfVmgKP-Ee2VhNTG0FQfOg" supplier="_rbMUcKPrEe2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_6vb4kKQBEe2VhNTG0FQfOg" client="_RltpkKP-Ee2VhNTG0FQfOg" supplier="_VqHvoKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_Er5hsKQCEe2VhNTG0FQfOg" client="_VfVmgKP-Ee2VhNTG0FQfOg" supplier="_bR3bQKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_uARvQKQKEe2VhNTG0FQfOg" client="_uZ4voKPqEe2VhNTG0FQfOg" supplier="_WNvIIKP_Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_CagXwKQLEe2VhNTG0FQfOg" client="_RltpkKP-Ee2VhNTG0FQfOg" supplier="_U47jQKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_J0fLIKQNEe2VhNTG0FQfOg" client="_VfVmgKP-Ee2VhNTG0FQfOg" supplier="_VqHvoKP9Ee2VhNTG0FQfOg"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_dxDAMKQNEe2VhNTG0FQfOg" client="_URxsYKPsEe2VhNTG0FQfOg" supplier="_VqHvoKP9Ee2VhNTG0FQfOg"/>
 </uml:Model>
