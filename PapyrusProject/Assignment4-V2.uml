@@ -1,7 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_u3QwcKSgEe2Lvbl9b0BgNA" name="PapyrusProject">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_u3QwcKSgEe2Lvbl9b0BgNA" name="PapyrusProject">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_vBPy4KSgEe2Lvbl9b0BgNA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_34ti0KSgEe2Lvbl9b0BgNA" name="Actor2"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IQ5bIKUCEe2e_IrU3EfAfA" name="Client Devices">
+    <packagedElement xmi:type="uml:Device" xmi:id="_MfpTgKUCEe2e_IrU3EfAfA" name="Smart Phone"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_M3ytwKUCEe2e_IrU3EfAfA" name="Tablet"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_NQOb4KUCEe2e_IrU3EfAfA" name="Laptop"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_j1mtUKUCEe2e_IrU3EfAfA" memberEnd="_j1v3QKUCEe2e_IrU3EfAfA _j1v3QaUCEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j1mtUaUCEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j1mtUqUCEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_j1v3QKUCEe2e_IrU3EfAfA" name="network device" type="_zLA7oKUDEe2e_IrU3EfAfA" association="_j1mtUKUCEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_j1v3QaUCEe2e_IrU3EfAfA" name="desktop computer" type="_NQOb4KUCEe2e_IrU3EfAfA" association="_j1mtUKUCEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_kYBd4KUCEe2e_IrU3EfAfA" memberEnd="_kYBd46UCEe2e_IrU3EfAfA _kYBd5KUCEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kYBd4aUCEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kYBd4qUCEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kYBd46UCEe2e_IrU3EfAfA" name="network device" type="_zLA7oKUDEe2e_IrU3EfAfA" association="_kYBd4KUCEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kYBd5KUCEe2e_IrU3EfAfA" name="tablet" type="_M3ytwKUCEe2e_IrU3EfAfA" association="_kYBd4KUCEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_sB1H4KUCEe2e_IrU3EfAfA" memberEnd="_sB1H46UCEe2e_IrU3EfAfA _sB-44KUCEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sB1H4aUCEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sB1H4qUCEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sB1H46UCEe2e_IrU3EfAfA" name="network device" type="_zLA7oKUDEe2e_IrU3EfAfA" association="_sB1H4KUCEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sB-44KUCEe2e_IrU3EfAfA" name="smart phone" type="_MfpTgKUCEe2e_IrU3EfAfA" association="_sB1H4KUCEe2e_IrU3EfAfA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ahO-8KUCEe2e_IrU3EfAfA" name="Front End Server Farm">
+    <packagedElement xmi:type="uml:Device" xmi:id="_-_-pYKUBEe2e_IrU3EfAfA" name="FrontEnd Webserver 2"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_vUrYsKUCEe2e_IrU3EfAfA" name="FrontEnd Webserver 1"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_AvJEcKUDEe2e_IrU3EfAfA" name="Load Balancer"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Dnl4QKUDEe2e_IrU3EfAfA" client="_AvJEcKUDEe2e_IrU3EfAfA" supplier="_-_-pYKUBEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ElIekKUDEe2e_IrU3EfAfA" client="_-_-pYKUBEe2e_IrU3EfAfA" supplier="_AvJEcKUDEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_FXDqwKUDEe2e_IrU3EfAfA" client="_AvJEcKUDEe2e_IrU3EfAfA" supplier="_vUrYsKUCEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_F7HaEKUDEe2e_IrU3EfAfA" client="_vUrYsKUCEe2e_IrU3EfAfA" supplier="_AvJEcKUDEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_AF0vwKUFEe2e_IrU3EfAfA" memberEnd="_AF0vw6UFEe2e_IrU3EfAfA _AF0vxKUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AF0vwaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AF0vwqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AF0vw6UFEe2e_IrU3EfAfA" name="networknode2" type="_0or-EKUEEe2e_IrU3EfAfA" association="_AF0vwKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AF0vxKUFEe2e_IrU3EfAfA" name="frontend webserver 2" type="_vUrYsKUCEe2e_IrU3EfAfA" association="_AF0vwKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_AkEyAKUFEe2e_IrU3EfAfA" memberEnd="_AkEyA6UFEe2e_IrU3EfAfA _AkEyBKUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AkEyAaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AkEyAqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AkEyA6UFEe2e_IrU3EfAfA" name="networknode2" type="_0or-EKUEEe2e_IrU3EfAfA" association="_AkEyAKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AkEyBKUFEe2e_IrU3EfAfA" name="frontend webserver 1" type="_-_-pYKUBEe2e_IrU3EfAfA" association="_AkEyAKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ST3fcKUDEe2e_IrU3EfAfA" name="Back End Server Farm">
+    <packagedElement xmi:type="uml:Device" xmi:id="_fN1bgKUDEe2e_IrU3EfAfA" name="Logic Server 1"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_HiCfIKUEEe2e_IrU3EfAfA" name="DataBase 2"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_JRC-oKUEEe2e_IrU3EfAfA" name="DataBase 1"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_Kj5toKUEEe2e_IrU3EfAfA" name="Load Balancer"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_OL6WIKUEEe2e_IrU3EfAfA" memberEnd="_OL6WI6UEEe2e_IrU3EfAfA _OMEHIKUEEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OL6WIaUEEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OL6WIqUEEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OL6WI6UEEe2e_IrU3EfAfA" name="device4" type="_Kj5toKUEEe2e_IrU3EfAfA" association="_OL6WIKUEEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OMEHIKUEEe2e_IrU3EfAfA" name="logic server 1" type="_fN1bgKUDEe2e_IrU3EfAfA" association="_OL6WIKUEEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_QufAkKUEEe2e_IrU3EfAfA" memberEnd="_QuoxkqUEEe2e_IrU3EfAfA _Quoxk6UEEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QuoxkKUEEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QuoxkaUEEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QuoxkqUEEe2e_IrU3EfAfA" name="device3" type="_JRC-oKUEEe2e_IrU3EfAfA" association="_QufAkKUEEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Quoxk6UEEe2e_IrU3EfAfA" name="device2" type="_HiCfIKUEEe2e_IrU3EfAfA" association="_QufAkKUEEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_e1RVEKUEEe2e_IrU3EfAfA" client="_HiCfIKUEEe2e_IrU3EfAfA" supplier="_Kj5toKUEEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_g1364KUEEe2e_IrU3EfAfA" client="_Kj5toKUEEe2e_IrU3EfAfA" supplier="_HiCfIKUEEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_hndTYKUFEe2e_IrU3EfAfA" name="Logic Server 2"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_pF73IKUFEe2e_IrU3EfAfA" client="_Kj5toKUEEe2e_IrU3EfAfA" supplier="_fN1bgKUDEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_qIijoKUFEe2e_IrU3EfAfA" client="_fN1bgKUDEe2e_IrU3EfAfA" supplier="_Kj5toKUEEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_rEvGIKUFEe2e_IrU3EfAfA" client="_Kj5toKUEEe2e_IrU3EfAfA" supplier="_hndTYKUFEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_tcIbUKUFEe2e_IrU3EfAfA" client="_hndTYKUFEe2e_IrU3EfAfA" supplier="_Kj5toKUEEe2e_IrU3EfAfA"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_wFHPwKUFEe2e_IrU3EfAfA" memberEnd="_wFHPw6UFEe2e_IrU3EfAfA _wFHPxKUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wFHPwaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wFHPwqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wFHPw6UFEe2e_IrU3EfAfA" name="database 1" type="_HiCfIKUEEe2e_IrU3EfAfA" association="_wFHPwKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wFHPxKUFEe2e_IrU3EfAfA" name="logic server 1" type="_fN1bgKUDEe2e_IrU3EfAfA" association="_wFHPwKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_xGFkkKUFEe2e_IrU3EfAfA" memberEnd="_xGFkk6UFEe2e_IrU3EfAfA _xGFklKUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xGFkkaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xGFkkqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xGFkk6UFEe2e_IrU3EfAfA" name="database2" type="_JRC-oKUEEe2e_IrU3EfAfA" association="_xGFkkKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xGFklKUFEe2e_IrU3EfAfA" name="logic server 2" type="_hndTYKUFEe2e_IrU3EfAfA" association="_xGFkkKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_0uGNEKUFEe2e_IrU3EfAfA" memberEnd="_0uGNE6UFEe2e_IrU3EfAfA _0uPXAKUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0uGNEaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0uGNEqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0uGNE6UFEe2e_IrU3EfAfA" name="database 1" type="_HiCfIKUEEe2e_IrU3EfAfA" association="_0uGNEKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0uPXAKUFEe2e_IrU3EfAfA" name="logic server 2" type="_hndTYKUFEe2e_IrU3EfAfA" association="_0uGNEKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_1UF2EKUFEe2e_IrU3EfAfA" memberEnd="_1UPAAaUFEe2e_IrU3EfAfA _1UPAAqUFEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1UF2EaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1UPAAKUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1UPAAaUFEe2e_IrU3EfAfA" name="database2" type="_JRC-oKUEEe2e_IrU3EfAfA" association="_1UF2EKUFEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1UPAAqUFEe2e_IrU3EfAfA" name="logic server 1" type="_fN1bgKUDEe2e_IrU3EfAfA" association="_1UF2EKUFEe2e_IrU3EfAfA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_PZkUsKUHEe2e_IrU3EfAfA" memberEnd="_PZkUs6UHEe2e_IrU3EfAfA _PZkUtKUHEe2e_IrU3EfAfA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PZkUsaUHEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PZkUsqUHEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PZkUs6UHEe2e_IrU3EfAfA" name="database 1" type="_HiCfIKUEEe2e_IrU3EfAfA" association="_PZkUsKUHEe2e_IrU3EfAfA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PZkUtKUHEe2e_IrU3EfAfA" name="database2" type="_JRC-oKUEEe2e_IrU3EfAfA" association="_PZkUsKUHEe2e_IrU3EfAfA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Node" xmi:id="_zLA7oKUDEe2e_IrU3EfAfA" name="NetworkNode1"/>
+  <packagedElement xmi:type="uml:Node" xmi:id="_0or-EKUEEe2e_IrU3EfAfA" name="NetworkNode2"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_DzNAcKUFEe2e_IrU3EfAfA" memberEnd="_DzWKYqUFEe2e_IrU3EfAfA _DzWKY6UFEe2e_IrU3EfAfA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DzWKYKUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DzWKYaUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DzWKYqUFEe2e_IrU3EfAfA" name="load balancer" type="_AvJEcKUDEe2e_IrU3EfAfA" association="_DzNAcKUFEe2e_IrU3EfAfA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DzWKY6UFEe2e_IrU3EfAfA" name="networknode1" type="_zLA7oKUDEe2e_IrU3EfAfA" association="_DzNAcKUFEe2e_IrU3EfAfA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_U9RfwKUFEe2e_IrU3EfAfA" memberEnd="_U9Rfw6UFEe2e_IrU3EfAfA _U9RfxKUFEe2e_IrU3EfAfA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U9RfwaUFEe2e_IrU3EfAfA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U9RfwqUFEe2e_IrU3EfAfA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U9Rfw6UFEe2e_IrU3EfAfA" name="logic server 1" type="_Kj5toKUEEe2e_IrU3EfAfA" association="_U9RfwKUFEe2e_IrU3EfAfA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U9RfxKUFEe2e_IrU3EfAfA" name="networknode2" type="_0or-EKUEEe2e_IrU3EfAfA" association="_U9RfwKUFEe2e_IrU3EfAfA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_riUgYKUNEe2e_IrU3EfAfA" name="Front End Webserver">
+    <nestedNode xmi:type="uml:Node" xmi:id="_sKG5IKUNEe2e_IrU3EfAfA" name="Node1"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_tMEscKUNEe2e_IrU3EfAfA" name="Node2"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_uXeIkKUNEe2e_IrU3EfAfA" name="Node3"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_xM9vAKUNEe2e_IrU3EfAfA" name="Node4"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_1Ln88KUNEe2e_IrU3EfAfA" name="Backend Logic Server">
+    <nestedNode xmi:type="uml:Node" xmi:id="_2m95kKUNEe2e_IrU3EfAfA" name="Node1"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_29KzEKUNEe2e_IrU3EfAfA" name="Node2"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_6rvWkKUNEe2e_IrU3EfAfA" name="Node3"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_6-0DkKUNEe2e_IrU3EfAfA" name="Node4"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_BKvaUKUOEe2e_IrU3EfAfA" name="Backend Database Server">
+    <nestedNode xmi:type="uml:Node" xmi:id="_Ev6xQKUOEe2e_IrU3EfAfA" name="Customer Data"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_FJ2UMKUOEe2e_IrU3EfAfA" name="Employee Data"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_GjQXIKUOEe2e_IrU3EfAfA" name="Bike Data"/>
+  </packagedElement>
 </uml:Model>
