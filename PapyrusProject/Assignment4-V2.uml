@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_u3QwcKSgEe2Lvbl9b0BgNA" name="PapyrusProject">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_rYV9MKWKEe2zyPI4vJy5Mw" annotatedElement="_HtRMYKWAEe2zyPI4vJy5Mw _Jn4awKWHEe2zyPI4vJy5Mw _u3QwcKSgEe2Lvbl9b0BgNA">
+    <body>Servers are running:&#xD;
+- Login Site (Front End)&#xD;
+- Reservation Site (Front End)&#xD;
+- Inventory Management Site (Front End)</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_Y51LwKWQEe2zyPI4vJy5Mw" annotatedElement="_BKvaUKUOEe2e_IrU3EfAfA _mZY7cKWAEe2zyPI4vJy5Mw">
+    <body>Backend Servers are responsible for&#xD;
+-Storing/Updating account info for:&#xD;
+--- Customers&#xD;
+--- Employees&#xD;
+--- Managers&#xD;
+- Storing/Updating inventory info for:&#xD;
+---Bikes</body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lQz6EKWREe2zyPI4vJy5Mw" annotatedElement="_1Ln88KUNEe2e_IrU3EfAfA _KgaM8KWBEe2zyPI4vJy5Mw">
+    <body>Backend Logic servers are responsible for:&#xD;
+- Handling Authentication Request&#xD;
+--- Create Account&#xD;
+--- Authorize Login&#xD;
+--- Deny Login&#xD;
+- Handling Reservation Events&#xD;
+--- Reserve/Cancel/Edit&#xD;
+- Handling Overwrite Events</body>
+  </ownedComment>
   <packageImport xmi:type="uml:PackageImport" xmi:id="_vBPy4KSgEe2Lvbl9b0BgNA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -130,21 +155,144 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_U9Rfw6UFEe2e_IrU3EfAfA" name="logic server 1" type="_Kj5toKUEEe2e_IrU3EfAfA" association="_U9RfwKUFEe2e_IrU3EfAfA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_U9RfxKUFEe2e_IrU3EfAfA" name="networknode2" type="_0or-EKUEEe2e_IrU3EfAfA" association="_U9RfwKUFEe2e_IrU3EfAfA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Device" xmi:id="_riUgYKUNEe2e_IrU3EfAfA" name="Front End Webserver">
-    <nestedNode xmi:type="uml:Node" xmi:id="_sKG5IKUNEe2e_IrU3EfAfA" name="Node1"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_tMEscKUNEe2e_IrU3EfAfA" name="Node2"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_uXeIkKUNEe2e_IrU3EfAfA" name="Node3"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_xM9vAKUNEe2e_IrU3EfAfA" name="Node4"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_riUgYKUNEe2e_IrU3EfAfA" name="ApacheWebSRV_1_v2.4">
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_HtRMYKWAEe2zyPI4vJy5Mw" name="GBS_WebUI_1A"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Device" xmi:id="_1Ln88KUNEe2e_IrU3EfAfA" name="Backend Logic Server">
-    <nestedNode xmi:type="uml:Node" xmi:id="_2m95kKUNEe2e_IrU3EfAfA" name="Node1"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_29KzEKUNEe2e_IrU3EfAfA" name="Node2"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_6rvWkKUNEe2e_IrU3EfAfA" name="Node3"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_6-0DkKUNEe2e_IrU3EfAfA" name="Node4"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_1Ln88KUNEe2e_IrU3EfAfA" name="Backend Logic Server_1">
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_Ojzw8KWBEe2zyPI4vJy5Mw" name="Authentication Services_1"/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="__xkqsKWLEe2zyPI4vJy5Mw" name="Reservation Services_1"/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_E-mwQKWMEe2zyPI4vJy5Mw" name="Inventory Management System_1"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Device" xmi:id="_BKvaUKUOEe2e_IrU3EfAfA" name="Backend Database Server">
-    <nestedNode xmi:type="uml:Node" xmi:id="_Ev6xQKUOEe2e_IrU3EfAfA" name="Customer Data"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_FJ2UMKUOEe2e_IrU3EfAfA" name="Employee Data"/>
-    <nestedNode xmi:type="uml:Node" xmi:id="_GjQXIKUOEe2e_IrU3EfAfA" name="Bike Data"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_BKvaUKUOEe2e_IrU3EfAfA" name="Backend Database Server 1">
+    <nestedNode xmi:type="uml:Node" xmi:id="_Ev6xQKUOEe2e_IrU3EfAfA" name="AccountData_1"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_GjQXIKUOEe2e_IrU3EfAfA" name="InventoryManagementData_1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_ax93QKV-Ee2zyPI4vJy5Mw" name="User Phone"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_mZY7cKWAEe2zyPI4vJy5Mw" name="Backend Database Server 2">
+    <nestedClassifier xmi:type="uml:Node" xmi:id="_ohhsoaWAEe2zyPI4vJy5Mw" name="AccountData_2"/>
+    <nestedClassifier xmi:type="uml:Node" xmi:id="_ohhsoqWAEe2zyPI4vJy5Mw" name="InventoryManagementData_2"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_mZY7caWAEe2zyPI4vJy5Mw" name="Customer Data"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_mZY7cqWAEe2zyPI4vJy5Mw" name="Employee Data"/>
+    <nestedNode xmi:type="uml:Node" xmi:id="_mZY7c6WAEe2zyPI4vJy5Mw" name="Bike Data"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_KgaM8KWBEe2zyPI4vJy5Mw" name="Backend Logic Server_2">
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_UmVTEqWMEe2zyPI4vJy5Mw" name="Inventory Management System_2"/>
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_UmVTEaWMEe2zyPI4vJy5Mw" name="Reservation Services_2"/>
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_UmVTEKWMEe2zyPI4vJy5Mw" name="Authentication Services_2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_D7s7EKWHEe2zyPI4vJy5Mw" name="ApacheWebSRV_2_v2.4">
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_D7s7EaWHEe2zyPI4vJy5Mw" name="GBS-Web1A"/>
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_D7s7EqWHEe2zyPI4vJy5Mw" name="GBS-Web1B"/>
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_Jn4awKWHEe2zyPI4vJy5Mw" name="GBS_WebUI_2A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_VMBzYKWHEe2zyPI4vJy5Mw" name="NetworkNode_1"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_W6I7AKWHEe2zyPI4vJy5Mw" name="User Tablet"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_aX3mIKWHEe2zyPI4vJy5Mw" name="User Laptop"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_h0JVAKWIEe2zyPI4vJy5Mw" memberEnd="_h0JVA6WIEe2zyPI4vJy5Mw _h0JVBKWIEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h0JVAaWIEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h0JVAqWIEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h0JVA6WIEe2zyPI4vJy5Mw" name="network node1" type="_VMBzYKWHEe2zyPI4vJy5Mw" association="_h0JVAKWIEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h0JVBKWIEe2zyPI4vJy5Mw" name="user phone" type="_ax93QKV-Ee2zyPI4vJy5Mw" association="_h0JVAKWIEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_iNx9AKWIEe2zyPI4vJy5Mw" name="HTTP" memberEnd="_iNx9A6WIEe2zyPI4vJy5Mw _iNx9BKWIEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iNx9AaWIEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iNx9AqWIEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iNx9A6WIEe2zyPI4vJy5Mw" name="network node1" type="_VMBzYKWHEe2zyPI4vJy5Mw" association="_iNx9AKWIEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_iNx9BKWIEe2zyPI4vJy5Mw" name="user tablet" type="_W6I7AKWHEe2zyPI4vJy5Mw" association="_iNx9AKWIEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_ip8UkKWIEe2zyPI4vJy5Mw" memberEnd="_ip8Uk6WIEe2zyPI4vJy5Mw _ip8UlKWIEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ip8UkaWIEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ip8UkqWIEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ip8Uk6WIEe2zyPI4vJy5Mw" name="network node1" type="_VMBzYKWHEe2zyPI4vJy5Mw" association="_ip8UkKWIEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ip8UlKWIEe2zyPI4vJy5Mw" name="user laptop" type="_aX3mIKWHEe2zyPI4vJy5Mw" association="_ip8UkKWIEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_yUX-YKWOEe2zyPI4vJy5Mw" name="LoadBalancer_2"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_HM3QMKWPEe2zyPI4vJy5Mw" name="LoadBalancer_1"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_NbeHgKWPEe2zyPI4vJy5Mw" name="HTTP" memberEnd="_NbeHg6WPEe2zyPI4vJy5Mw _NbeHhKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NbeHgaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NbeHgqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NbeHg6WPEe2zyPI4vJy5Mw" name="loadbalancer_1" type="_HM3QMKWPEe2zyPI4vJy5Mw" association="_NbeHgKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NbeHhKWPEe2zyPI4vJy5Mw" name="networknode_1" type="_VMBzYKWHEe2zyPI4vJy5Mw" association="_NbeHgKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_Ol-y0KWPEe2zyPI4vJy5Mw" memberEnd="_Ol-y06WPEe2zyPI4vJy5Mw _Ol-y1KWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ol-y0aWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ol-y0qWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ol-y06WPEe2zyPI4vJy5Mw" name="apachewebsrv_1_v2.4" type="_riUgYKUNEe2e_IrU3EfAfA" association="_Ol-y0KWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ol-y1KWPEe2zyPI4vJy5Mw" name="loadbalancer_1" type="_HM3QMKWPEe2zyPI4vJy5Mw" association="_Ol-y0KWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_QvXhMKWPEe2zyPI4vJy5Mw" name="HTTP" memberEnd="_QvXhM6WPEe2zyPI4vJy5Mw _QvXhNKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QvXhMaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QvXhMqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QvXhM6WPEe2zyPI4vJy5Mw" name="apachewebsrv_2_v2.4" type="_D7s7EKWHEe2zyPI4vJy5Mw" association="_QvXhMKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QvXhNKWPEe2zyPI4vJy5Mw" name="loadbalancer_1" type="_HM3QMKWPEe2zyPI4vJy5Mw" association="_QvXhMKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_jMSIcKWPEe2zyPI4vJy5Mw" name="HTTP" memberEnd="_jMSIc6WPEe2zyPI4vJy5Mw _jMSIdKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jMSIcaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jMSIcqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jMSIc6WPEe2zyPI4vJy5Mw" name="loadbalancer_2" type="_yUX-YKWOEe2zyPI4vJy5Mw" association="_jMSIcKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jMSIdKWPEe2zyPI4vJy5Mw" name="apachewebsrv_1_v2.4" type="_riUgYKUNEe2e_IrU3EfAfA" association="_jMSIcKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_juQNEKWPEe2zyPI4vJy5Mw" memberEnd="_juQNE6WPEe2zyPI4vJy5Mw _juQNFKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_juQNEaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_juQNEqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_juQNE6WPEe2zyPI4vJy5Mw" name="loadbalancer_2" type="_yUX-YKWOEe2zyPI4vJy5Mw" association="_juQNEKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_juQNFKWPEe2zyPI4vJy5Mw" name="apachewebsrv_2_v2.4" type="_D7s7EKWHEe2zyPI4vJy5Mw" association="_juQNEKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_tE-r4KWPEe2zyPI4vJy5Mw" name="HTTP" memberEnd="_tE-r46WPEe2zyPI4vJy5Mw _tE-r5KWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tE-r4aWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tE-r4qWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tE-r46WPEe2zyPI4vJy5Mw" name="loadbalancer_2" type="_yUX-YKWOEe2zyPI4vJy5Mw" association="_tE-r4KWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tE-r5KWPEe2zyPI4vJy5Mw" name="backend logic server_1" type="_1Ln88KUNEe2e_IrU3EfAfA" association="_tE-r4KWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_ti7zMKWPEe2zyPI4vJy5Mw" memberEnd="_ti7zM6WPEe2zyPI4vJy5Mw _ti7zNKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ti7zMaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ti7zMqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ti7zM6WPEe2zyPI4vJy5Mw" name="loadbalancer_2" type="_yUX-YKWOEe2zyPI4vJy5Mw" association="_ti7zMKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ti7zNKWPEe2zyPI4vJy5Mw" name="backend logic server_2" type="_KgaM8KWBEe2zyPI4vJy5Mw" association="_ti7zMKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_-kz_0KWPEe2zyPI4vJy5Mw" name="FTP" memberEnd="_-kz_06WPEe2zyPI4vJy5Mw _-kz_1KWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-kz_0aWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-kz_0qWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-kz_06WPEe2zyPI4vJy5Mw" name="backend database server 1" type="_BKvaUKUOEe2e_IrU3EfAfA" association="_-kz_0KWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-kz_1KWPEe2zyPI4vJy5Mw" name="backend logic server_1" type="_1Ln88KUNEe2e_IrU3EfAfA" association="_-kz_0KWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="__JA5EKWPEe2zyPI4vJy5Mw" name="FTP" memberEnd="__JA5E6WPEe2zyPI4vJy5Mw __JA5FKWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__JA5EaWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__JA5EqWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__JA5E6WPEe2zyPI4vJy5Mw" name="backend database server 2" type="_mZY7cKWAEe2zyPI4vJy5Mw" association="__JA5EKWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__JA5FKWPEe2zyPI4vJy5Mw" name="backend logic server_2" type="_KgaM8KWBEe2zyPI4vJy5Mw" association="__JA5EKWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="__9nl0KWPEe2zyPI4vJy5Mw" name="FTP" memberEnd="__9nl06WPEe2zyPI4vJy5Mw __9nl1KWPEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__9nl0aWPEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__9nl0qWPEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__9nl06WPEe2zyPI4vJy5Mw" name="backend database server 1" type="_BKvaUKUOEe2e_IrU3EfAfA" association="__9nl0KWPEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__9nl1KWPEe2zyPI4vJy5Mw" name="backend logic server_2" type="_KgaM8KWBEe2zyPI4vJy5Mw" association="__9nl0KWPEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_Ax7XoKWQEe2zyPI4vJy5Mw" memberEnd="_Ax7Xo6WQEe2zyPI4vJy5Mw _Ax7XpKWQEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ax7XoaWQEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ax7XoqWQEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ax7Xo6WQEe2zyPI4vJy5Mw" name="backend database server 2" type="_mZY7cKWAEe2zyPI4vJy5Mw" association="_Ax7XoKWQEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ax7XpKWQEe2zyPI4vJy5Mw" name="backend logic server_1" type="_1Ln88KUNEe2e_IrU3EfAfA" association="_Ax7XoKWQEe2zyPI4vJy5Mw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_E5hfIKWQEe2zyPI4vJy5Mw" name="FTP" memberEnd="_E5hfI6WQEe2zyPI4vJy5Mw _E5hfJKWQEe2zyPI4vJy5Mw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E5hfIaWQEe2zyPI4vJy5Mw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E5hfIqWQEe2zyPI4vJy5Mw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E5hfI6WQEe2zyPI4vJy5Mw" name="backend database server 2" type="_mZY7cKWAEe2zyPI4vJy5Mw" association="_E5hfIKWQEe2zyPI4vJy5Mw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_E5hfJKWQEe2zyPI4vJy5Mw" name="backend database server 1" type="_BKvaUKUOEe2e_IrU3EfAfA" association="_E5hfIKWQEe2zyPI4vJy5Mw"/>
   </packagedElement>
 </uml:Model>
