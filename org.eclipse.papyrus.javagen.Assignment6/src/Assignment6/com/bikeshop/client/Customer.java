@@ -17,4 +17,27 @@ public class Customer {
 	 * 
 	 */
 	public Long customerId;
+	
+	public String getCustomerName() {
+		return customerName;
+	}
+	
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	
+	public Long getCustomerId() {
+		return customerId;
+	}
+	
+	public void setCustomerId(Long customerId) {
+		this.customerId = customerId;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerName=" + customerName + ", customerId=" + customerId + "]";
+	}
+	
+	
 }
