@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 
 import Assignment6.com.bikeshop.client.Customer;
 
-class CustomerTest {
+public class CustomerTest {
 
 	@org.junit.jupiter.api.Test
 	void test() {

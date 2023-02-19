@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import Assignment6.com.bikeshop.client.Employee;
 
-class EmployeeTest {
+public class EmployeeTest {
 
 	@Test
 	void test() {
