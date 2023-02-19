@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/PapyrusProject/src" modelPluginID="PapyrusProject"
+    modelName="Assignment6" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>Assignment6.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Assignment6" disposableProviderFactory="true"
+      ecorePackage="Assignment6.ecore#/">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Combikeshopclient" disposableProviderFactory="true"
+        ecorePackage="Assignment6.ecore#//combikeshopclient">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopclient/Customer">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopclient/Customer/customerName"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopclient/Customer/customerId"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopclient/Employee">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopclient/Employee/employeeName"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopclient/Employee/employeeId"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopclient/Employee/isManager"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Combikeshopserver" disposableProviderFactory="true"
+        ecorePackage="Assignment6.ecore#//combikeshopserver">
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/Reservation">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Reservation/reservationDate"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/Reservation/bikeId"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Reservation/startDate"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Reservation/endDate"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/Reservation/reserve"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/Bike">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Bike/bikeId"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Bike/isAvailable"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/Bike/reservation"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Bike/updateBy"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Bike/price"/>
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Bike/description"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/Bike/update"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/Add">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/Add/bike"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/Add/add"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/Overwrite">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/Overwrite/bike"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/Overwrite/overwrite"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/Authentication">
+        <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute Assignment6.ecore#//combikeshopserver/Authentication/isAuthorized"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/Authentication/authorize"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/CustomerDb">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/CustomerDb/customer"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/CustomerDb/bike"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/CustomerDb/update"/>
+      </genClasses>
+      <genClasses xsi:type="genmodel:GenClass" ecoreClass="Assignment6.ecore#//combikeshopserver/EmployeeDb">
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/EmployeeDb/employee"/>
+        <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+            propertySortChoices="true" ecoreFeature="ecore:EReference Assignment6.ecore#//combikeshopserver/EmployeeDb/bike"/>
+        <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="Assignment6.ecore#//combikeshopserver/EmployeeDb/update"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

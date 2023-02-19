@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Assignment6 -->
+      <package
+            uri="http:///Assignment6/combikeshopclient.ecore"
+            class="Assignment6.combikeshopclient.CombikeshopclientPackage"
+            genModel="Assignment6.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Assignment6 -->
+      <package
+            uri="http:///Assignment6/combikeshopserver.ecore"
+            class="Assignment6.combikeshopserver.CombikeshopserverPackage"
+            genModel="Assignment6.genmodel"/>
+   </extension>
+
+</plugin>

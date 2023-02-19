@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_2KYPIK8cEe23KcTZ8BY4wQ" name="Assignment6">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_2PD60K8cEe23KcTZ8BY4wQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JIqeEK8dEe23KcTZ8BY4wQ" name="com.bikeshop.client">
+    <packagedElement xmi:type="uml:Class" xmi:id="_MAZgMK8dEe23KcTZ8BY4wQ" name="Customer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ks-UAK8eEe23KcTZ8BY4wQ" name="customerName" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Mns7UK8eEe23KcTZ8BY4wQ" name="customerId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NYX_wK8dEe23KcTZ8BY4wQ" name="Employee">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QFkwYK8eEe23KcTZ8BY4wQ" name="employeeName" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_UiXEwK8eEe23KcTZ8BY4wQ" name="employeeId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Z_rCAK8eEe23KcTZ8BY4wQ" name="isManager" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_zfVvwK8dEe23KcTZ8BY4wQ" name="Request" client="_JIqeEK8dEe23KcTZ8BY4wQ" supplier="_YnPr8K8dEe23KcTZ8BY4wQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YnPr8K8dEe23KcTZ8BY4wQ" name="com.bikeshop.server">
+    <packagedElement xmi:type="uml:Class" xmi:id="_bG4XIK8dEe23KcTZ8BY4wQ" name="Reservation">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nOE9AK8eEe23KcTZ8BY4wQ" name="reservationDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qTvtcK8eEe23KcTZ8BY4wQ" name="bikeId" type="_sJMooK8dEe23KcTZ8BY4wQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eFJNIK8fEe23KcTZ8BY4wQ" name="startDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DMJU8K8gEe23KcTZ8BY4wQ" name="endDate">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_peXvMK8fEe23KcTZ8BY4wQ" name="reserve"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cmUwoK8dEe23KcTZ8BY4wQ" name="Add">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MlNLgK8fEe23KcTZ8BY4wQ" name="bike" type="_sJMooK8dEe23KcTZ8BY4wQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_TQOSAK8fEe23KcTZ8BY4wQ" name="add"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eCudMK8dEe23KcTZ8BY4wQ" name="Overwrite">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YZMW8K8fEe23KcTZ8BY4wQ" name="bike" type="_sJMooK8dEe23KcTZ8BY4wQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_XEa8YK8fEe23KcTZ8BY4wQ" name="overwrite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fjCZYK8dEe23KcTZ8BY4wQ" name="Authentication">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EqRVQK8fEe23KcTZ8BY4wQ" name="isAuthorized" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_U3YdEK8fEe23KcTZ8BY4wQ" name="authorize"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hQziwK8dEe23KcTZ8BY4wQ" name="CustomerDb">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_c9r10K8fEe23KcTZ8BY4wQ" name="customer" type="_MAZgMK8dEe23KcTZ8BY4wQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dOWIAK8fEe23KcTZ8BY4wQ" name="bike" type="_sJMooK8dEe23KcTZ8BY4wQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_o7Ol4K8fEe23KcTZ8BY4wQ" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iDPFQK8dEe23KcTZ8BY4wQ" name="EmployeeDb">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ddfXQK8fEe23KcTZ8BY4wQ" name="employee" type="_NYX_wK8dEe23KcTZ8BY4wQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dva0wK8fEe23KcTZ8BY4wQ" name="bike" type="_sJMooK8dEe23KcTZ8BY4wQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pPCSsK8fEe23KcTZ8BY4wQ" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sJMooK8dEe23KcTZ8BY4wQ" name="Bike">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qCqIAK8fEe23KcTZ8BY4wQ" name="bikeId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8fpnwK8fEe23KcTZ8BY4wQ" name="isAvailable">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KB99QK8gEe23KcTZ8BY4wQ" name="reservation" type="_bG4XIK8dEe23KcTZ8BY4wQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N6bckK8gEe23KcTZ8BY4wQ" name="updateBy">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RGS7oK8gEe23KcTZ8BY4wQ" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TK3bcK8gEe23KcTZ8BY4wQ" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pt1ukK8fEe23KcTZ8BY4wQ" name="update"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_106gAK8dEe23KcTZ8BY4wQ" name="Response" client="_YnPr8K8dEe23KcTZ8BY4wQ" supplier="_JIqeEK8dEe23KcTZ8BY4wQ"/>
+  </packagedElement>
+</uml:Model>

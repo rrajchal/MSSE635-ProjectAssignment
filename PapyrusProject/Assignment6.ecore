@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Assignment6" nsURI="http:///Assignment6.ecore" nsPrefix="Assignment6">
+  <eSubpackages name="combikeshopclient" nsURI="http:///Assignment6/combikeshopclient.ecore"
+      nsPrefix="Assignment6.combikeshopclient">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="com.bikeshop.client"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="Customer">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerName" ordered="false"
+          unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerId" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Employee">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="employeeName" ordered="false"
+          unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="employeeId" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isManager" ordered="false"
+          unique="false" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages name="combikeshopserver" nsURI="http:///Assignment6/combikeshopserver.ecore"
+      nsPrefix="Assignment6.combikeshopserver">
+    <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details key="originalName" value="com.bikeshop.server"/>
+    </eAnnotations>
+    <eClassifiers xsi:type="ecore:EClass" name="Reservation">
+      <eOperations name="reserve" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="reservationDate" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bikeId" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Bike"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Bike">
+      <eOperations name="update" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="bikeId" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAvailable" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="reservation" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Reservation"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="updateBy" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Add">
+      <eOperations name="add" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bike" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Bike"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Overwrite">
+      <eOperations name="overwrite" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bike" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Bike"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Authentication">
+      <eOperations name="authorize" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAuthorized" ordered="false"
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CustomerDb">
+      <eOperations name="update" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="customer" ordered="false"
+          lowerBound="1" eType="#//combikeshopclient/Customer"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bike" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Bike"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EmployeeDb">
+      <eOperations name="update" ordered="false" lowerBound="1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="employee" ordered="false"
+          lowerBound="1" eType="#//combikeshopclient/Employee"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="bike" ordered="false"
+          lowerBound="1" eType="#//combikeshopserver/Bike"/>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>
