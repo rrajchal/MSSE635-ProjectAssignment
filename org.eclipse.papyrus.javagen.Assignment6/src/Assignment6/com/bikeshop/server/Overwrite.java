@@ -19,4 +19,17 @@ public class Overwrite {
 	 */
 	public void overwrite() {
 	}
+
+	public Bike getBike() {
+		return bike;
+	}
+
+	public void setBike(Bike bike) {
+		this.bike = bike;
+	}
+
+	@Override
+	public String toString() {
+		return "Overwrite [bike=" + bike + "]";
+	}
 }

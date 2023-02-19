@@ -25,4 +25,25 @@ public class EmployeeDb {
 	 */
 	public void update() {
 	}
+
+	public Employee getEmployee() {
+		return employee;
+	}
+
+	public void setEmployee(Employee employee) {
+		this.employee = employee;
+	}
+
+	public Bike getBike() {
+		return bike;
+	}
+
+	public void setBike(Bike bike) {
+		this.bike = bike;
+	}
+
+	@Override
+	public String toString() {
+		return "EmployeeDb [employee=" + employee + ", bike=" + bike + "]";
+	}
 }

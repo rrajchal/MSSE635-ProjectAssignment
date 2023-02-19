@@ -19,4 +19,19 @@ public class Add {
 	 */
 	public void add() {
 	}
+
+	public Bike getBike() {
+		return bike;
+	}
+
+	public void setBike(Bike bike) {
+		this.bike = bike;
+	}
+
+	@Override
+	public String toString() {
+		return "Add [bike=" + bike + "]";
+	}
+	
+	
 }

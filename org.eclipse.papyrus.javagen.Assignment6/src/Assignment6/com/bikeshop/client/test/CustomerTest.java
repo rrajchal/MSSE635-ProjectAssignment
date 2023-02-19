@@ -11,7 +11,9 @@ class CustomerTest {
 		Customer customer = new Customer();
 		customer.setCustomerName("John");
 		customer.setCustomerId(123456L);
+		
 		System.out.println(customer);
+		
 		Assertions.assertTrue(!customer.customerName.isEmpty());
 		Assertions.assertTrue(customer.customerId > 0L);
 	}

@@ -16,7 +16,7 @@ public class Reservation {
 	/**
 	 * 
 	 */
-	public Bike bikeId;
+	public Long bikeId;
 	/**
 	 * 
 	 */
@@ -31,4 +31,44 @@ public class Reservation {
 	 */
 	public void reserve() {
 	}
+
+	public String getReservationDate() {
+		return reservationDate;
+	}
+
+	public void setReservationDate(String reservationDate) {
+		this.reservationDate = reservationDate;
+	}
+
+	public Long getBikeId() {
+		return bikeId;
+	}
+
+	public void setBikeId(Long bikeId) {
+		this.bikeId = bikeId;
+	}
+
+	public String getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+
+	public String getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Reservation [reservationDate=" + reservationDate + ", bikeId=" + bikeId + ", startDate=" + startDate
+				+ ", endDate=" + endDate + "]";
+	}
+	
+	
 }

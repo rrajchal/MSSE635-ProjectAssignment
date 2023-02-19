@@ -21,4 +21,35 @@ public class Employee {
 	 * 
 	 */
 	public Boolean isManager;
+	
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+	
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+	
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+	
+	public Boolean getIsManager() {
+		return isManager;
+	}
+	
+	public void setIsManager(Boolean isManager) {
+		this.isManager = isManager;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeName=" + employeeName + ", employeeId=" + employeeId + ", isManager=" + isManager
+				+ "]";
+	}
+	
 }

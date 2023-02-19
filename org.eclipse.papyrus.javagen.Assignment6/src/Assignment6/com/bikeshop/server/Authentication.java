@@ -19,4 +19,19 @@ public class Authentication {
 	 */
 	public void authorize() {
 	}
+
+	public Boolean getIsAuthorized() {
+		return isAuthorized;
+	}
+
+	public void setIsAuthorized(Boolean isAuthorized) {
+		this.isAuthorized = isAuthorized;
+	}
+
+	@Override
+	public String toString() {
+		return "Authentication [isAuthorized=" + isAuthorized + "]";
+	}
+	
+	
 }

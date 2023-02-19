@@ -25,4 +25,27 @@ public class CustomerDb {
 	 */
 	public void update() {
 	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Bike getBike() {
+		return bike;
+	}
+
+	public void setBike(Bike bike) {
+		this.bike = bike;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomerDb [customer=" + customer + ", bike=" + bike + "]";
+	}
+	
+	
 }
